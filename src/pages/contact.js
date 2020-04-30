@@ -1,11 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
-import Header from "../components/Header"
+
+import Layout from "../components/layout"
 
 export default () => (
-  <div style={{color: 'purple'}}>
-    <Link to="/">Home</Link>
-    <Header headerText="Contact"/>
+  <Layout>
+    <h1>Contact</h1>
     <p>Send us a message.</p>
-  </div>
+  </Layout>
 )
