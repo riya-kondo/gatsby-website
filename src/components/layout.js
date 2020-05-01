@@ -9,13 +9,13 @@ import styles from "./component-modules.module.css"
 export default ({ children }) => (
   <div>
     <Navbar/>
-    <div className={styles.container}>
+    <div className={styles.content}>
       <Sidebar>
         <p>This is text in sidebar</p>
       </Sidebar>
-      <div className={styles.main}>
-        <div>
-        {children}
+      <div className={styles.container}>
+        <div className={styles.main}>
+          {children}
         </div>
         <Footer/>
       </div>

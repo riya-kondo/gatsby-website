@@ -6,16 +6,22 @@
   height: 2rem;
 }
 
-.container {
+.content {
   display: flex;
-  height: 100vh;
   overflow: hidden;
   padding-top: 5rem;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 .main{
   margin: 3rem auto;
-  max-width: 650px;
   padding: 0 1rem;
   position: relative;
 }

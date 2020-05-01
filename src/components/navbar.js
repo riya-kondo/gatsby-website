@@ -31,6 +31,7 @@ export default () => {
         padding: 1rem;
         margin: 0 auto;
         background-color: purple;
+        z-index: 1024;
       `}
     >
       <header style={{ marginBottom: "1.5rem" }}>
