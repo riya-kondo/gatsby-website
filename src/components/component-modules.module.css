@@ -9,7 +9,8 @@
 .container {
   display: flex;
   height: 100vh;
-  padding-top: 2rem;
+  overflow: hidden;
+  padding-top: 5rem;
 }
 
 .main{
@@ -23,6 +24,7 @@
   background-color: ghostwhite;
   width: 30%;
   float: left;
+  padding: 2rem;
 }
 
 .footer {

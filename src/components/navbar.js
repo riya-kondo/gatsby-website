@@ -1,6 +1,8 @@
 import React from "react"
+import { css } from "@emotion/core"
 import { Link } from "gatsby"
 
+import { rhythm } from "../utils/typography"
 import styles from "./component-modules.module.css"
 
 const ListLink = props => (
@@ -9,8 +11,19 @@ const ListLink = props => (
   </li>
 )
 
-export default ({ children }) => (
-  <div className={styles.navbar} style={{backgroundColor: "purple"}}>
+export default () => (
+  <div //className={styles.navbar} style={{backgroundColor: "purple"}} 
+    css={css`
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 5rem;
+      padding: 1rem;
+      margin: 0 auto;
+      background-color: purple;
+    `}
+  >
     <header style={{ marginBottom: "1.5rem" }}>
       <Link to="/" style={{ textShadow: "none", backgroundImage: "none" }}>
         <h3 style={{ margin: "1rem", display: "inline" }}>MySweetSite</h3>
